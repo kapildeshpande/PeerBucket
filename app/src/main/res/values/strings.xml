@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PeerBucket</string>
+    <string name="login_bottom_text">Need help?<u> Contact our Support Team</u></string>
+    <string name="login_intro_text">Or try Basecamp with\n      your company...</string>
+    <string name="login_text">Log in to Basecamp</string>
+    <string name="login_other_account">or, use my email address</string>
+    <string name="use_google_account">Use my Google account</string>
+</resources>
