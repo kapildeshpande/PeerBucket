@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/free_trial_cv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:id="@+id/close_free_trial_iv"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/baseColor"
+                android:id="@+id/start_free_trial_tv"
+                android:text="@string/free_trial_header"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/free_trial_webview"
+        android:layout_below="@id/free_trial_cv"></WebView>
+
+
+</RelativeLayout>

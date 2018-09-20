@@ -7,8 +7,9 @@
     android:background="@color/baseColor">
 
     <ImageView
-        android:layout_width="36dp"
-        android:layout_height="36dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="8dp"
         android:src="@drawable/ic_back"
         android:layout_alignParentTop="true"
         android:id="@+id/navigate_back"/>
@@ -25,7 +26,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,8 +39,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="54dp"
-            android:layout_marginTop="25dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/shape_white_button"
             android:layout_gravity="center">
 
@@ -73,9 +74,9 @@
             android:text="@string/login_other_account"/>
 
         <EditText
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
-            android:layout_height="54dp"
+            android:layout_height="48dp"
             android:background="@drawable/shape_white_button"
             android:hint="hello@example.com"
             android:layout_gravity="center"
@@ -87,9 +88,9 @@
             android:inputType="textEmailAddress" />
 
         <Button
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
-            android:layout_height="54dp"
+            android:layout_height="48dp"
             android:textColor="@color/baseColor"
             android:gravity="center"
             android:layout_gravity="center"
@@ -136,7 +137,7 @@
             android:gravity="center"/>
 
         <Button
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="54dp"
             android:textColor="@color/baseColor"
@@ -169,8 +170,8 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             android:gravity="center"
-            android:textStyle="bold"
             android:layout_margin="8dp"
+            android:padding="8dp"
             android:text="@string/login_bottom_text"/>
 
 
