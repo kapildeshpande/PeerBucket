@@ -1,8 +1,33 @@
 <resources>
     <string name="app_name">PeerBucket</string>
     <string name="login_bottom_text">Need help?<u> Contact our Support Team</u></string>
-    <string name="login_intro_text">Or try Basecamp with\n      your company...</string>
-    <string name="login_text">Log in to Basecamp</string>
+    <string name="login_intro_text">Or try PeerBucket with\n      your company...</string>
+    <string name="login_text">Log in to PeerBucket</string>
+    <string name="free_trial">Start a 30 day free trial</string>
     <string name="login_other_account">or, use my email address</string>
     <string name="use_google_account">Use my Google account</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="button_next">Next</string>
+    <!--Contact Support Dialog-->
+
+    <string name="contact_support_heading">PeerBucket Support is here to help</string>
+    <string name="contact_first_heading">First, check out our</string>
+    <string name="contact_second_heading">Quick question?</string>
+    <string name="contact_third_heading">Need more help?</string>
+
+    <string name="contact_first_detail">Help page</string>
+    <string name="contact_second_detail">Tweet us</string>
+    <string name="contact_third_detail">Email us</string>
+    <string name="contact_cancel">CANCEL</string>
+
+    <!--Free Treial Screen-->
+
+    <string name="free_trial_header">OK, TAKE ME TO THE FREE TRIAL</string>
+
+    <!--Sign up Screen-->
+    <string name="signup_text">Sign up with...</string>
+    <string name="signup_password_heading">Make a new password</string>
+    <string name="signup_password_description">Once you\'ve done that, we\'ll setup a new user and company account for you.</string>
+    <string name="signup_password_hint">your password</string>
+
 </resources>

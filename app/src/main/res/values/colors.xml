@@ -6,4 +6,5 @@
     <color name="baseColor">#66bb6a</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="material_blue">#1B6AC9</color>
 </resources>
