@@ -20,14 +20,22 @@
     <string name="contact_third_detail">Email us</string>
     <string name="contact_cancel">CANCEL</string>
 
-    <!--Free Treial Screen-->
+    <!--Free Trial Screen-->
 
     <string name="free_trial_header">OK, TAKE ME TO THE FREE TRIAL</string>
 
     <!--Sign up Screen-->
-    <string name="signup_text">Sign up with...</string>
+    <string name="signup_text">Sign up with…</string>
     <string name="signup_password_heading">Make a new password</string>
     <string name="signup_password_description">Once you\'ve done that, we\'ll setup a new user and company account for you.</string>
     <string name="signup_password_hint">your password</string>
 
+    <!--set up account-->
+
+    <string name="setup_acc_header">Set up your account</string>
+    <string name="setup_acc_intro">Just a few quick things to set up your account…</string>
+    <string name="setup_acc_first_step_header">First, tell us a bit about yourself and your company.</string>
+    <string name="setup_acc_et_company_name">Your company name</string>
+    <string name="setup_acc_et_job_tittle">Your job tittle (optional)</string>
+    <string name="setup_acc_step_1">Step 1 of 4</string>
 </resources>

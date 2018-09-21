@@ -29,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_set_up_account);
 
         forgotPasswordLayout = findViewById(R.id.forgot_password_layout);
         mainLayout = findViewById(R.id.main_layout);
