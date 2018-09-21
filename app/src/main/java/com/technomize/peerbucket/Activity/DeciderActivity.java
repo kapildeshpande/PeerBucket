@@ -1,4 +1,4 @@
-package com.technomize.peerbucket;
+package com.technomize.peerbucket.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.technomize.peerbucket.R;
 
 public class DeciderActivity extends AppCompatActivity implements View.OnClickListener {
 
