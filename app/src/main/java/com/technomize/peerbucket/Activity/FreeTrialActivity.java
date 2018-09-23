@@ -1,4 +1,4 @@
-package com.technomize.peerbucket;
+package com.technomize.peerbucket.Activity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.technomize.peerbucket.R;
 
 /**
  * Created by rishi on 9/20/2018.

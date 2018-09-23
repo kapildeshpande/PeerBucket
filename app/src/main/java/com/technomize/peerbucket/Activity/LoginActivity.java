@@ -1,4 +1,4 @@
-package com.technomize.peerbucket;
+package com.technomize.peerbucket.Activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.technomize.peerbucket.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
