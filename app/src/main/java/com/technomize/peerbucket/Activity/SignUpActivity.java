@@ -1,16 +1,22 @@
-package com.technomize.peerbucket;
+package com.technomize.peerbucket.Activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.technomize.peerbucket.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,12 +30,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private LinearLayout forgotPasswordLayout,mainLayout;
     private ImageView navigateBack;
     private EditText email;
-    private Button navigateNext;
+    private Button navigateNext,navigateNextPassword;
+    private TextView mContactSupport;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_up_account);
+        setContentView(R.layout.activity_signup);
 
         forgotPasswordLayout = findViewById(R.id.forgot_password_layout);
         mainLayout = findViewById(R.id.main_layout);
@@ -37,10 +44,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         navigateBack = findViewById(R.id.navigate_back);
 
         email = findViewById(R.id.email);
-        navigateNext = findViewById(R.id.navigate_next);
+        navigateNext =(Button) findViewById(R.id.navigate_next);
+        navigateNextPassword = findViewById(R.id.next_password);
 
         navigateNext.setOnClickListener(this);
         navigateBack.setOnClickListener(this);
+        navigateNextPassword.setOnClickListener(this);
+
+        mContactSupport = findViewById(R.id.contact_support_tv);
+        mContactSupport.setOnClickListener(this);
     }
 
     private static boolean isEmailValid(String email) {
@@ -75,6 +87,28 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 }
                 break;
 
+            case R.id.next_password:
+                Intent intent = new Intent(this,SetupAccountActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.contact_support_tv:
+                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+
+                LayoutInflater inflater = this.getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.dialog_support_team, null);
+                dialogBuilder.setView(dialogView);
+
+                TextView mDialogCancel = (TextView) dialogView.findViewById(R.id.contact_support_cancel_tv);
+
+                final AlertDialog alertDialog = dialogBuilder.create();
+                alertDialog.show();
+                mDialogCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        alertDialog.dismiss();
+                    }
+                });
         }
 
     }

@@ -8,6 +8,7 @@
     <string name="use_google_account">Use my Google account</string>
     <string name="forgot_password">Forgot your password?</string>
     <string name="button_next">Next</string>
+    <string name="button_all_done">All Done</string>
     <!--Contact Support Dialog-->
 
     <string name="contact_support_heading">PeerBucket Support is here to help</string>
@@ -30,12 +31,43 @@
     <string name="signup_password_description">Once you\'ve done that, we\'ll setup a new user and company account for you.</string>
     <string name="signup_password_hint">your password</string>
 
+    <!-- Login Screen-->
+    <string name="login_your_password">What\'s your password?</string>
+    <string name="login_password">your password?</string>
+
     <!--set up account-->
 
     <string name="setup_acc_header">Set up your account</string>
     <string name="setup_acc_intro">Just a few quick things to set up your account…</string>
+
+    <string name="setup_acc_second_step_checkbox1">Sales</string>
+    <string name="setup_acc_second_step_checkbox2">R&amp;D</string>
+    <string name="setup_acc_second_step_checkbox3">Marketing</string>
+    <string name="setup_acc_second_step_checkbox4">Managers</string>
+    <string name="setup_acc_second_step_checkbox5">Finance</string>
+
+    <string name="setup_acc_third_step_checkbox1">Redesigning a website</string>
+    <string name="setup_acc_third_step_checkbox2">Planning an event</string>
+    <string name="setup_acc_third_step_checkbox3">Launching a new product</string>
+    <string name="setup_acc_third_step_checkbox4">Rebranding a business</string>
+
     <string name="setup_acc_first_step_header">First, tell us a bit about yourself and your company.</string>
+    <string name="setup_acc_second_step_header">Do you have any of these teams at your company?</string>
+    <string name="setup_acc_third_step_header">Got any of these projects going on right now?</string>
+    <string name="setup_acc_fourth_step_header">Want to invite a partner or coworker right away?</string>
+
+    <string name="setup_acc_second_step_detail">We\'ll give you a head start and set them up for you. You can always add more or change these later.</string>
+    <string name="setup_acc_third_step_detail">Aren\'t sure yet? No problem - you can do this later.</string>
+    <string name="setup_acc_fourth_step_detail">If you\'d like someone else to try PeerBucket with you. type their info below (You can skip this or do it later.) </string>
+
     <string name="setup_acc_et_company_name">Your company name</string>
     <string name="setup_acc_et_job_tittle">Your job tittle (optional)</string>
+
+    <string name="setup_acc_et_coworker_name">Coworker\'s Name</string>
+    <string name="setup_acc_et_coworker_email">Coworker\'s Email</string>
+
     <string name="setup_acc_step_1">Step 1 of 4</string>
+    <string name="setup_acc_step_2">Step 2 of 4</string>
+    <string name="setup_acc_step_3">Step 3 of 4</string>
+    <string name="setup_acc_step_4">Step 4 of 4</string>
 </resources>

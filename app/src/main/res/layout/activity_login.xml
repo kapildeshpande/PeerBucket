@@ -114,7 +114,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -123,14 +123,14 @@
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:textSize="23sp"
-            android:text="What's your password?"/>
+            android:text="@string/login_your_password"/>
 
         <EditText
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="54dp"
             android:background="@drawable/shape_white_button"
-            android:hint="your password"
+            android:hint="@string/login_your_password"
             android:layout_gravity="center"
             android:singleLine="true"
             android:imeOptions="actionDone"
@@ -143,7 +143,8 @@
             android:textColor="@color/baseColor"
             android:gravity="center"
             android:layout_gravity="center"
-            android:text="Next"
+            android:text="@string/button_next"
+            android:id="@+id/forgot_password_layout_next"
             android:textAllCaps="false"
             android:background="@drawable/shape_white_button" />
 
@@ -154,7 +155,7 @@
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:textSize="18sp"
-            android:text="Forgot your password?"/>
+            android:text="@string/forgot_password"/>
 
     </LinearLayout>
 
@@ -172,6 +173,7 @@
             android:gravity="center"
             android:layout_margin="8dp"
             android:padding="8dp"
+            android:id="@+id/contact_support_tv"
             android:text="@string/login_bottom_text"/>
 
 

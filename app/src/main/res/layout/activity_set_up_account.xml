@@ -3,6 +3,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="54dp"
@@ -20,108 +22,388 @@
 
     </android.support.v7.widget.CardView>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_below="@id/setup_account_header_cv_LL"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="32dp"
-            android:src="@drawable/logo"/>
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:id="@+id/setup_acc_intro"
-            android:text="@string/setup_acc_intro"/>
+            android:orientation="vertical"
+            android:gravity="center">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/logo"/>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp"
-                android:padding="8dp"
-                >
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/setup_acc_intro"
+                android:text="@string/setup_acc_intro"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:padding="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@android:color/white"
-                    android:text="@string/setup_acc_step_1"
-                    android:background="@drawable/shape_purple_button"
-                    android:layout_height="wrap_content" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/setup_acc_first_step_header"
-                    android:textSize="17sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center"
-                    />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:padding="8dp"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:hint="@string/setup_acc_et_company_name"
-                    android:background="@drawable/rectangle_edit_text"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:padding="8dp"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:hint="@string/setup_acc_et_job_tittle"
-                    android:background="@drawable/rectangle_edit_text"/>
-
+                <!--first start here-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/step1_layout"
+                    android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/button_next"
-                        android:layout_margin="12dp"
-                        android:textSize="16sp"
-                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
                         android:gravity="center"
-                        android:background="@drawable/shape_green_button_small"
+                        android:textColor="@android:color/white"
+                        android:text="@string/setup_acc_step_1"
+                        android:background="@drawable/shape_purple_button"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_first_step_header"
+                        android:textSize="17sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
                         />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:hint="@string/setup_acc_et_company_name"
+                        android:background="@drawable/rectangle_edit_text"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:hint="@string/setup_acc_et_job_tittle"
+                        android:background="@drawable/rectangle_edit_text"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_next"
+                            android:layout_margin="12dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@drawable/shape_green_button_small"
+                            android:id="@+id/next_step1"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+                <!--second start here-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:id="@+id/step2_layout"
+                    android:visibility="gone">
 
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:text="@string/setup_acc_step_2"
+                        android:background="@drawable/shape_purple_button"
+                        android:layout_height="wrap_content" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_header"
+                        android:textSize="17sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_detail"
+                        android:textSize="16sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <!--
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/setup_acc_second_step_recyclerView"/>
+                        -->
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_checkbox1"
+                        android:id="@+id/checkbox_sales"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_checkbox2"
+                        android:id="@+id/checkbox_RandD"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_checkbox3"
+                        android:id="@+id/checkbox_marketing"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_checkbox4"
+                        android:id="@+id/checkbox_managers"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_second_step_checkbox5"
+                        android:id="@+id/checkbox_finance"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_next"
+                            android:layout_margin="12dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@drawable/shape_green_button_small"
+                            android:id="@+id/next_step2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--third start here-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:id="@+id/step3_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:text="@string/setup_acc_step_3"
+                        android:background="@drawable/shape_purple_button"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_header"
+                        android:textSize="17sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_detail"
+                        android:textSize="16sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <!--
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/setup_acc_third_step_recyclerView"/>
+                    -->
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_checkbox1"
+                        android:id="@+id/checkbox_redesign_website"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_checkbox2"
+                        android:id="@+id/checkbox_plan_event"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_checkbox3"
+                        android:id="@+id/checkbox_launch_product"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_third_step_checkbox4"
+                        android:id="@+id/checkbox_rebrand_business"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_next"
+                            android:layout_margin="12dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@drawable/shape_green_button_small"
+                            android:id="@+id/next_step3"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--fourth start here-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:id="@+id/step4_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:text="@string/setup_acc_step_4"
+                        android:background="@drawable/shape_purple_button"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_fourth_step_header"
+                        android:textSize="17sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_acc_fourth_step_detail"
+                        android:textSize="16sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:hint="@string/setup_acc_et_coworker_name"
+                        android:background="@drawable/rectangle_edit_text"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:hint="@string/setup_acc_et_coworker_email"
+                        android:background="@drawable/rectangle_edit_text"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_all_done"
+                            android:layout_margin="12dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@drawable/shape_green_button_small"
+                            android:id="@+id/next_step4"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>
