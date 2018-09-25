@@ -1,5 +1,6 @@
 package com.technomize.peerbucket.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -55,6 +56,8 @@ public class SetupAccountActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.next_step4:
+                Intent intent = new Intent(this,HomeActivity.class);
+                startActivity(intent);
                 break;
         }
     }

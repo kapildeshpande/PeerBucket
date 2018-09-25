@@ -70,4 +70,8 @@
     <string name="setup_acc_step_2">Step 2 of 4</string>
     <string name="setup_acc_step_3">Step 3 of 4</string>
     <string name="setup_acc_step_4">Step 4 of 4</string>
+
+    <!-- HomeActivity -->
+    <string name="team">Teams</string>
+    <string name="search">Search</string>
 </resources>

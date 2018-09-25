@@ -23,7 +23,8 @@
             android:label="" />
         <activity android:name=".Activity.FreeTrialActivity" />
         <activity android:name=".Activity.SignUpActivity" />
-        <activity android:name=".Activity.SetupAccountActivity"></activity>
+        <activity android:name=".Activity.SetupAccountActivity" />
+        <activity android:name=".Activity.HomeActivity"></activity>
     </application>
 
 </manifest>
