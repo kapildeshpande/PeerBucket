@@ -73,5 +73,10 @@
 
     <!-- HomeActivity -->
     <string name="team">Teams</string>
+    <string name="project">Projects</string>
     <string name="search">Search</string>
+    <string name="new_team">MAKE A NEW TEAM</string>
+    <string name="new_project">MAKE A NEW PROJECT</string>
+    <string name="logo_text">Company-wide announcements and stuff everyone needs to know.</string>
+
 </resources>
