@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.DeciderActivity">
+        <activity android:name=".Activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
         <activity android:name=".Activity.FreeTrialActivity" />
         <activity android:name=".Activity.SignUpActivity" />
         <activity android:name=".Activity.SetupAccountActivity" />
-        <activity android:name=".Activity.HomeActivity"></activity>
+
     </application>
 
 </manifest>
