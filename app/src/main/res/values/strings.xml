@@ -79,4 +79,19 @@
     <string name="new_project">MAKE A NEW PROJECT</string>
     <string name="logo_text">Company-wide announcements and stuff everyone needs to know.</string>
 
+    <!--Home Activity expand company dialog-->
+
+    <string name="ec_intro">Company-wide announcements and stuff everyone needs to know.</string>
+    <string name="ec_info"><u> Add/Remove </u></string>
+    
+    
+    
+    
+    <!--Global-->
+    <string name="chat">Chat</string>
+    <string name="message_board">Message Board</string>
+    <string name="to_dos">To-dos</string>
+    <string name="schedule">Schedule</string>
+    <string name="automatic_check_ins">Automatic Check-ins</string>
+    <string name="docs_files">Docs &amp; FIles</string>
 </resources>
