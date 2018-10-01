@@ -78,6 +78,11 @@
     <string name="new_team">MAKE A NEW TEAM</string>
     <string name="new_project">MAKE A NEW PROJECT</string>
     <string name="logo_text">Company-wide announcements and stuff everyone needs to know.</string>
+    <string name="fab_layout1">Add a To-do</string>
+    <string name="fab_layout2">Add an Event</string>
+    <string name="fab_layout3">Post a Message</string>
+    <string name="fab_layout4">Upload Files</string>
+    <string name="fab_layout5">Close</string>
 
     <!--Home Activity expand company dialog-->
 

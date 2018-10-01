@@ -29,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private LinearLayout forgotPasswordLayout,mainLayout;
     private ImageView navigateBack;
-    private EditText email;
+    private EditText email,password;
     private Button navigateNext,navigateNextPassword;
     private TextView mContactSupport;
 
@@ -53,6 +53,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         mContactSupport = findViewById(R.id.contact_support_tv);
         mContactSupport.setOnClickListener(this);
+
+        password = findViewById(R.id.password_text);
     }
 
     private static boolean isEmailValid(String email) {
@@ -79,7 +81,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.navigate_next:
                 if (isEmailValid(email.getText().toString())) {
                     InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                    inputManager.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                     mainLayout.setVisibility(View.GONE);
                     forgotPasswordLayout.setVisibility(View.VISIBLE);
                 } else {
@@ -88,6 +90,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 break;
 
             case R.id.next_password:
+                if (password.getText() == null || password.getText().toString().equals("")
+                        || password.getText().toString().isEmpty())
+                    break;
+
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputManager.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                 Intent intent = new Intent(this,SetupAccountActivity.class);
                 startActivity(intent);
                 break;

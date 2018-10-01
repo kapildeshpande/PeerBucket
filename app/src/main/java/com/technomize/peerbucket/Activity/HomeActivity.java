@@ -3,6 +3,7 @@ package com.technomize.peerbucket.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,8 +24,10 @@ import com.technomize.peerbucket.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView mcv_company_hq, mcv_search_expand;
-    LinearLayout mcreate_team_LL,mcreate_new_project_LL,mtab_start_hey_LL;
+    CardView mcv_company_hq, mcv_search_expand,fabLayout;
+    LinearLayout mcreate_team_LL,mcreate_new_project_LL,mtab_start_hey_LL,closeFabLayout;
+    FloatingActionButton floatingActionButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +46,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         collapsingToolbar.setExpandedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor);
         collapsingToolbar.setCollapsedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor);
 
+        fabLayout = findViewById(R.id.fab_layout);
+        closeFabLayout = findViewById(R.id.close_fab_layout);
 
+        floatingActionButton = findViewById(R.id.fab);
 
+        closeFabLayout.setOnClickListener(this);
+        floatingActionButton.setOnClickListener(this);
         mcv_company_hq.setOnClickListener(this);
         mcv_search_expand.setOnClickListener(this);
         mcreate_team_LL.setOnClickListener(this);
@@ -133,6 +141,16 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 Intent startHeyActivity= new Intent(HomeActivity.this,HeyActivity.class);
                 startActivity(startHeyActivity);
                 finish();
+                break;
+
+            case R.id.fab:
+                floatingActionButton.setVisibility(View.GONE);
+                fabLayout.setVisibility(View.VISIBLE);
+                break;
+
+            case R.id.close_fab_layout:
+                fabLayout.setVisibility(View.GONE);
+                floatingActionButton.setVisibility(View.VISIBLE);
                 break;
         }
     }

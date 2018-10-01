@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private ImageView navigateBack;
     private LinearLayout mainLayout,forgotPasswordLayout;
-    private EditText emailText;
+    private EditText emailText,passwordText;
     private Button navigateNext,navigateNextPassword;
     private TextView mContactSupportTv;
 
@@ -48,6 +48,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         mContactSupportTv = findViewById(R.id.contact_support_tv);
         mContactSupportTv.setOnClickListener(this);
+
+        passwordText = findViewById(R.id.password_text);
     }
 
     private static boolean isEmailValid(String email) {
@@ -82,6 +84,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.forgot_password_layout_next:
+
+                if (passwordText.getText() == null || passwordText.getText().toString().equals("")
+                        || passwordText.getText().toString().isEmpty())
+                    break;
+
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputManager.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                 break;
 
             case R.id.contact_support_tv:
@@ -102,6 +111,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     }
                 });
                 break;
+
         }
     }
 

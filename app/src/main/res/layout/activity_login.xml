@@ -134,7 +134,8 @@
             android:layout_gravity="center"
             android:singleLine="true"
             android:imeOptions="actionDone"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:id="@+id/password_text"/>
 
         <Button
             android:layout_marginTop="16dp"
