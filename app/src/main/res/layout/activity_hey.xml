@@ -9,7 +9,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="134dp"
         android:fitsSystemWindows="true"
         android:background="@color/material_cream"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -74,21 +74,84 @@
 
     </android.support.design.widget.AppBarLayout>
     <include layout="@layout/content_home_layout" />
+<!--Search Card View-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cv_search_expand">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_back"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Search for.."
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </Spinner>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--Search card view end-->
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="65dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/baseColor"
+        app:backgroundTint="@color/baseColor"
         android:backgroundTint="@color/baseColor"
         android:layout_gravity="bottom|end"
-        android:src="@drawable/ic_add_green"
+        android:src="@drawable/ic_fab_add"
         tools:targetApi="lollipop" />
-
+<!--Tab cardview-->
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="54dp"
         android:background="@color/white"
         android:layout_gravity="bottom|end">
         <LinearLayout
@@ -101,12 +164,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
+                    android:src="@drawable/ic_home_disabled"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -119,12 +186,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tab_start_hey_LL"
+                android:background="?attr/selectableItemBackground"
                 android:layout_weight="1">
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
+                    android:src="@drawable/ic_hey_active"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -136,12 +207,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
+                    android:src="@drawable/ic_activity_disabled"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,12 +228,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
+                    android:src="@drawable/ic_me_disabled"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -169,4 +248,7 @@
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
+    <!--Tab Cardview End-->
+
 </android.support.design.widget.CoordinatorLayout>
