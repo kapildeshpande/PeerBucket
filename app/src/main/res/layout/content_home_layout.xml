@@ -13,6 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
             >
 
             <LinearLayout
@@ -147,6 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:id="@+id/create_team_LL"
                    >
 
                     <ImageView
@@ -177,7 +179,7 @@
                 android:visibility="gone"/>
 <!--Demo start-->
             <android.support.v7.widget.CardView
-                android:layout_width="136dp"
+                android:layout_width="match_parent"
                 android:background="@drawable/shape_white_backround"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
@@ -227,24 +229,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:id="@+id/create_new_project_LL"
                     >
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_add"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="8dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/new_project"
+                        android:textAllCaps="false"
                         android:textColor="@color/material_blue"
                         android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:textAllCaps="false"
-                        android:text="@string/new_project"
-                        android:layout_marginEnd="8dp"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -257,7 +263,7 @@
                 android:visibility="gone"/>
 <!--Demo Start-->
             <android.support.v7.widget.CardView
-                android:layout_width="136dp"
+                android:layout_width="match_parent"
                 android:background="@drawable/shape_white_backround"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"

@@ -9,11 +9,36 @@
         android:orderInCategory="2" />
     <item android:id="@+id/message"
         android:title="@string/search"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/ic_chat"
         app:showAsAction="always"
         android:orderInCategory="1" />
 
     <item
-        android:title="@string/team"/>
+        android:icon="@drawable/ic_option_dots"
+        android:title="@string/om_header"
+        android:orderInCategory="3"
+        app:showAsAction="always">
+    <menu>
+    <item
+        android:icon="@drawable/ic_manage_templates"
+        android:title="@string/om_templates"
+        app:showAsAction="ifRoom" />
+    <item
+        android:icon="@drawable/ic_adminland"
+        android:title="@string/om_adminland"
+        app:showAsAction="ifRoom" />
+    <item
+        android:icon="@drawable/ic_settings"
+        android:title="@string/om_settings"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:icon="@drawable/ic_help"
+        android:title="@string/om_help"
+        app:showAsAction="ifRoom" />
+    </menu>
+    </item>
+
 
 </menu>
