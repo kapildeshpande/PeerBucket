@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:windowSoftInputMode="adjustPan"
-        android:screenOrientation="portrait">
+        >
 
-        <activity android:name=".Activity.DeciderActivity">
+        <activity android:name=".Activity.DeciderActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,16 +24,36 @@
         </activity>
         <activity
             android:name=".Activity.LoginActivity"
-            android:label="" />
-        <activity android:name=".Activity.FreeTrialActivity" />
-        <activity android:name=".Activity.SignUpActivity" />
-        <activity android:name=".Activity.SetupAccountActivity" />
+            android:label=""
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.FreeTrialActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.SignUpActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.SetupAccountActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".Activity.HomeActivity"
-           android:theme="@style/Noanimation"/>
+           android:theme="@style/Noanimation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".Activity.HeyActivity"
-            android:theme="@style/Noanimation"/>
+            android:theme="@style/Noanimation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.CreateTeamActivity"
+            android:theme="@style/Noanimation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.CreateProjectActivity"
+            android:theme="@style/Noanimation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
 
     </application>
 

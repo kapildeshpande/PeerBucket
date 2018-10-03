@@ -52,7 +52,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kapil HQ 3:01PM" />
+                    android:text=" HQ 3:01PM" />
 
             </LinearLayout>
 
