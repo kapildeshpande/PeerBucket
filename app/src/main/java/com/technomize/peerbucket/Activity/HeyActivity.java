@@ -5,9 +5,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
-import com.technomize.peerbucket.NewNotificationAdapter;
-import com.technomize.peerbucket.OldNotificationAdapter;
+import com.technomize.peerbucket.Adapter.NewNotificationAdapter;
+import com.technomize.peerbucket.Adapter.OldNotificationAdapter;
 import com.technomize.peerbucket.R;
 
 /**
@@ -22,6 +23,9 @@ public class HeyActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hey);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         initNewNotiRecyclerView();
         initOldNotiRecyclerView();

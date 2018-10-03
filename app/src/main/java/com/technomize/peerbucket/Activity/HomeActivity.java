@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,7 +27,7 @@ import com.technomize.peerbucket.R;
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     CardView mcv_company_hq, mcv_search_expand,fabLayout;
-    LinearLayout mcreate_team_LL,mcreate_new_project_LL,mtab_start_hey_LL,closeFabLayout;
+    LinearLayout mcreate_team_LL,mcreate_new_project_LL,mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL;
     FloatingActionButton floatingActionButton;
 
     @Override
@@ -42,6 +43,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mcreate_team_LL=(LinearLayout)findViewById(R.id.create_team_LL);
         mcreate_new_project_LL=(LinearLayout)findViewById(R.id.create_new_project_LL);
         mtab_start_hey_LL=(LinearLayout)findViewById(R.id.tab_start_hey_LL);
+
+        mtab_start_activity_LL = findViewById(R.id.tab_start_activity_LL);
 
         CollapsingToolbarLayout collapsingToolbar = findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setExpandedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor);
@@ -59,6 +62,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mcreate_team_LL.setOnClickListener(this);
         mcreate_new_project_LL.setOnClickListener(this);
         mtab_start_hey_LL.setOnClickListener(this);
+        mtab_start_activity_LL.setOnClickListener(this);
     }
 
     @Override
@@ -105,6 +109,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tab_start_hey_LL:
                 Intent startHeyActivity= new Intent(HomeActivity.this,HeyActivity.class);
                 startActivity(startHeyActivity);
+                finish();
+                break;
+
+            case R.id.tab_start_activity_LL:
+                Log.d("", "onClick: Navigating to activity screen");
+                Intent activity = new Intent(HomeActivity.this,ActivityScreen.class);
+                startActivity(activity);
                 finish();
                 break;
 

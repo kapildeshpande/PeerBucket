@@ -1,10 +1,11 @@
-package com.technomize.peerbucket;
+package com.technomize.peerbucket.Adapter;
 
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.technomize.peerbucket.R;
 
 public class OldNotificationAdapter extends RecyclerView.Adapter<OldNotificationAdapter.MyViewHolder>  {
 
