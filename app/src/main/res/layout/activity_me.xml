@@ -74,7 +74,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_hey_layout" />
+    <include layout="@layout/content_me_layout" />
 
     <!--Search Card View-->
     <android.support.v7.widget.CardView

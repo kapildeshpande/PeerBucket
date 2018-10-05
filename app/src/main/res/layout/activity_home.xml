@@ -290,7 +290,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/tab_start_home_LL">
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
@@ -355,7 +356,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/tab_start_me_LL">
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
