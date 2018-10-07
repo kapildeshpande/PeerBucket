@@ -131,4 +131,19 @@
     <string name="dialog_version_subtext">Now easier to prioritize new messages, discussions, and more...</string>
     <string name="dialog_version_close">CLOSE</string>
 
+    <!-- Company HQ Expand Activity -->
+    <string name="companyHQ_center_text">Company-wide announcements and stuff\n everyone needs to know.</string>
+    <string name="companyHQ_card1">Campfire</string>
+    <string name="companyHQ_card2">Message Board</string>
+    <string name="companyHQ_card3">To-dos</string>
+    <string name="companyHQ_card4">Schedule</string>
+    <string name="companyHQ_card5">Automatic Check-ins</string>
+    <string name="companyHQ_card6">Docs and Files</string>
+    <string name="companyHQ_tools">Change tools (add Email Forwards)</string>
+    <string name="companyHQ_activity">Company HQ Activity</string>
+    <string name="companyHQ_welcome">Welcome to Kapil HQ!</string>
+    <string name="companyHQ_welcome_subtext">Kapil Deshpande created this September 14,2018</string>
+    <string name="companyHQ_welcome_description">This is the communications hub for your whole company. Use it to post announcements, notes, and stuff everyone needs to know.</string>
+    <string name="companyHQ_welcome_link">Learn more about the tools above \u2022 Need a hand with anything? we're standing by!</string>
+    <string name="companyHQ_welcome_end">Happy Basecamping</string>
 </resources>

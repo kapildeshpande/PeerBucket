@@ -41,7 +41,7 @@
                 android:layout_margin="8dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_expand"
-                />
+                android:id="@+id/expand_company_hq"/>
         </LinearLayout>
 
         <TextView

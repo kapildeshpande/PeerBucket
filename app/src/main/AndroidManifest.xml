@@ -62,9 +62,11 @@
             android:name=".Activity.ActivityScreen"
             android:label="@string/title_activity_screen"
             android:theme="@style/Noanimation" />
-        <activity android:name=".Activity.MeActivity"
-            android:theme="@style/Noanimation"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity.MeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Noanimation" />
+        <activity android:name=".Activity.CompanyHQExpandActivity"></activity>
     </application>
 
 </manifest>

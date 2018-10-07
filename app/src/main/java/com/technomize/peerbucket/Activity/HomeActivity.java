@@ -111,8 +111,20 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 LayoutInflater inflater = this.getLayoutInflater();
                 View dialogView = inflater.inflate(R.layout.dialog_tcp_expand, null);
                 dialogBuilder.setView(dialogView);
+
+                ImageView imageView = dialogView.findViewById(R.id.expand_company_hq);
+
                 final AlertDialog alertDialog = dialogBuilder.create();
                 alertDialog.show();
+
+                imageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,CompanyHQExpandActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
                 break;
             case R.id.create_team_LL:
                 Intent intentnewT= new Intent(HomeActivity.this,CreateTeamActivity.class);
