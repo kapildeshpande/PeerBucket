@@ -17,19 +17,26 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.technomize.peerbucket.R;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener,
+        AdapterView.OnItemSelectedListener {
 
     CardView mcv_company_hq, mcv_search_expand,fabLayout;
     LinearLayout mcreate_team_LL,mcreate_new_project_LL
             ,mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL,mtab_start_me_LL;
     FloatingActionButton floatingActionButton;
+    Spinner mtoolbar_spinner;
+    String[] accounts = { "Testing Acoount", "Check 1", "No Check", "That's it", "Done"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        mtoolbar_spinner=(Spinner)toolbar.findViewById(R.id.toolbar_spinner);
         mcv_company_hq=(CardView)findViewById(R.id.cv_company_hq);
         mcv_search_expand=(CardView)findViewById(R.id.cv_search_expand);
         mcreate_team_LL=(LinearLayout)findViewById(R.id.create_team_LL);
@@ -66,6 +74,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mtab_start_hey_LL.setOnClickListener(this);
         mtab_start_activity_LL.setOnClickListener(this);
         mtab_start_me_LL.setOnClickListener(this);
+        mtoolbar_spinner.setOnItemSelectedListener(this);
+        ArrayAdapter aa = new ArrayAdapter(this,R.layout.custom_spinner,accounts);
+        aa.setDropDownViewResource(R.layout.custom_spinner_dropdown);
+
+        //Setting the ArrayAdapter data on the Spinner
+        mtoolbar_spinner.setAdapter(aa);
+
     }
 
     @Override
@@ -135,5 +150,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 floatingActionButton.setVisibility(View.VISIBLE);
                 break;
         }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
+        Toast.makeText(getApplicationContext(),accounts[position] , Toast.LENGTH_LONG).show();
+    }
+    @Override
+    public void onNothingSelected(AdapterView<?> arg0) {
+
     }
 }

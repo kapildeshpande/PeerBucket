@@ -300,7 +300,7 @@
                     android:layout_height="28dp"
                     android:layout_margin="2dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_home_active"
+                    android:src="@drawable/ic_home_disabled"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -366,7 +366,7 @@
                     android:layout_height="28dp"
                     android:layout_margin="2dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_me_disabled"
+                    android:src="@drawable/ic_me_active"
                     />
                 <TextView
                     android:layout_width="wrap_content"
