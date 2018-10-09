@@ -17,19 +17,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/ic_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/back_arrow_chat_box"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Headquarter > Chat"
+                android:text="Headquarter"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:textSize="16sp"
-                android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:textColor="@color/black"
                 />
@@ -37,11 +40,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Count Member"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
+                android:text="> Chat"
                 android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
                 />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/circular_border"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/chat_box_user_count_LL"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Count"
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/chat_box_group"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
 
@@ -51,7 +86,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:id="@+id/time_LL">
 
         <View
@@ -91,9 +126,10 @@
             android:orientation="horizontal"
             android:padding="4dp">
             <ImageView
-                android:id="@+id/image_message_profile"
+                android:id="@+id/image_other_user_profile"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:src="@drawable/contact_support1"
                 android:background="@drawable/circular_text_view"
                 android:layout_marginStart="8dp"
                  />
@@ -218,8 +254,11 @@
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:src="@drawable/contact_support2"
                 android:background="@drawable/circular_text_view"
+                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:id="@+id/chat_box_right_image"
                 android:layout_gravity="end" />
         </LinearLayout>
 
@@ -241,20 +280,17 @@
             android:layout_height="32dp"
             android:layout_gravity="center"
             android:text="A"
+            android:textSize="20sp"
+            android:id="@+id/attachment_chat_box"
             android:gravity="center"
             android:layout_marginStart="4dp"/>
-        <TextView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="G"
-            android:layout_marginStart="8dp"/>
+
 
         <EditText
             android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:maxHeight="200dp"
             android:textColor="@color/black"
             android:layout_marginEnd="8dp"
             android:hint="Send message"
@@ -271,6 +307,8 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="S"
+            android:textSize="22sp"
+            android:id="@+id/send_chat_box"
             android:layout_marginEnd="8dp"/>
     </LinearLayout>
 

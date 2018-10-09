@@ -146,4 +146,21 @@
     <string name="companyHQ_welcome_description">This is the communications hub for your whole company. Use it to post announcements, notes, and stuff everyone needs to know.</string>
     <string name="companyHQ_welcome_link">Learn more about the tools above \u2022 Need a hand with anything? we're standing by!</string>
     <string name="companyHQ_welcome_end">Happy Basecamping</string>
+
+
+
+    <!--Dialog Current user-->
+
+    <string name="dialog_current_user_option1">See what\'s on my plate</string>
+    <string name="dialog_current_user_option2">See what I\'ve been up to</string>
+    <string name="dialog_current_user_option3">Edit Profile</string>
+
+    <!--Dialog other USer-->
+    <string name="dialog_other_user_option1">Ping this user!</string>
+    <string name="dialog_other_user_option2">See what\'s on this user's plate</string>
+    <string name="dialog_other_user_option3">See what this user had been upto</string>
+    <!--Bottomsheet Chat box-->
+
+    <string name="bottomsheet_dialog_chat_box_people_following"> people following this:</string>
+    <string name="bottomsheet_dialog_chat_box">Unfollow</string>
 </resources>
