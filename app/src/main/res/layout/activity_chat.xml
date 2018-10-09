@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/material_cream"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/back_arrow_chat_box"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Headquarter"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="> Chat"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/circular_border"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/chat_box_user_count_LL"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Count"
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/chat_box_group"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="32dp"
+        android:id="@+id/time_LL">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/material_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Monday, September 25"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/material_grey"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <!--Message Send Code-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/received_view_LL"
+        android:layout_below="@id/time_LL"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <ImageView
+                android:id="@+id/image_other_user_profile"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/contact_support1"
+                android:background="@drawable/circular_text_view"
+                android:layout_marginStart="8dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_message_name"
+                    android:text="Shubham Jain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+`                    <TextView
+                        android:id="@+id/text_message_body"
+                        android:text="hi man, how are you?"
+                        android:background="@drawable/chat_background_received"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="240dp"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp" />
+                    <TextView
+                        android:id="@+id/text_message_time"
+                        android:text="11:40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="4dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!-- Message Receive Code-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/received_view_LL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Pranav Khandelwal"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <TextView
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:text="Tired, no fun in ios  (._.)"
+                        android:background="@drawable/chat_background_received"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="240dp"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp" />
+                    <TextView
+                        android:text="11:40"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="4dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/contact_support2"
+                android:background="@drawable/circular_text_view"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/chat_box_right_image"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--bOTTOM VIEW-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/material_cream"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:text="A"
+            android:textSize="20sp"
+            android:id="@+id/attachment_chat_box"
+            android:gravity="center"
+            android:layout_marginStart="4dp"/>
+
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="200dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp"
+            android:hint="Send message"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:imeOptions="actionSend"
+            android:background="@drawable/shape_white_button"/>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="22sp"
+            android:id="@+id/send_chat_box"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -67,6 +67,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation" />
         <activity android:name=".Activity.CompanyHQExpandActivity"></activity>
+
+        <activity android:name=".Activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Noanimation"
+            android:windowSoftInputMode="adjustPan"/>
     </application>
 
 </manifest>

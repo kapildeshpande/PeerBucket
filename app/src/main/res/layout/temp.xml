@@ -1,172 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/material_cream"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appBarLayout"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
         android:background="@color/material_cream"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <ImageView
-                android:id="@+id/header"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_collapseMode="parallax" />
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/ic_back"/>
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                android:background="@color/material_cream"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Headquarter > Chat"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="bottom|end"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count Member"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
 
-                android:layout_margin="8dp"
-                app:layout_collapseMode="parallax"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
-                    android:gravity="center"
-                    android:background="@drawable/shape_white_button_small">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_bookmark"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bookmarks"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textColor="@color/material_blue"
-                        android:textSize="14sp"
-                        android:textAllCaps="false" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </android.support.design.widget.CollapsingToolbarLayout>
-
-    </android.support.design.widget.AppBarLayout>
-    <include layout="@layout/content_home_layout" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="65dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/baseColor"
-        android:backgroundTint="@color/baseColor"
-        android:layout_gravity="bottom|end"
-        android:src="@drawable/ic_add_green"
-        tools:targetApi="lollipop" />
-
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        android:layout_gravity="bottom|end">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:id="@+id/time_LL">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/material_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Monday, September 25"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/material_grey"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <!--Message Send Code-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/received_view_LL"
+        android:layout_below="@id/time_LL"
+        >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:padding="4dp">
+            <ImageView
+                android:id="@+id/image_message_profile"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circular_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
+                android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
-                    />
                 <TextView
+                    android:id="@+id/text_message_name"
+                    android:text="Shubham Jain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hey"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Activity"
-                    android:layout_gravity="center"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/contact_support2"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ME"
-                    android:layout_gravity="center"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_message_body"
+                        android:text="hi man, how are you?"
+                        android:background="@drawable/chat_background_received"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="240dp"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp" />
+                    <TextView
+                        android:id="@+id/text_message_time"
+                        android:text="11:40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="4dp"
+                      />
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
-</android.support.design.widget.CoordinatorLayout>
+
+
+
+    </LinearLayout>
+
+<!-- Message Receive Code-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/received_view_LL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Pranav Khandelwal"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <TextView
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:text="Tired, no fun in ios  (._.)"
+                        android:background="@drawable/chat_background_received"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="240dp"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp" />
+                    <TextView
+                        android:text="11:40"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="4dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circular_text_view"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--bOTTOM VIEW-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/material_cream"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:text="A"
+            android:gravity="center"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="G"
+            android:layout_marginStart="8dp"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp"
+            android:hint="Send message"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:imeOptions="actionSend"
+            android:background="@drawable/shape_white_button"/>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="S"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+    </RelativeLayout>
