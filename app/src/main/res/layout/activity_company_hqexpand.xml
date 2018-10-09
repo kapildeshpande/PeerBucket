@@ -6,10 +6,7 @@
     android:background="@color/material_cream"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/relative_layout1">
+
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -541,6 +538,6 @@
         </android.support.v7.widget.CardView>
         <!--Search card view end-->
 
-    </RelativeLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>

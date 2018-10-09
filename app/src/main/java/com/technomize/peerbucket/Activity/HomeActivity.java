@@ -33,7 +33,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     CardView mcv_company_hq, mcv_search_expand,fabLayout;
     LinearLayout mcreate_team_LL,mcreate_new_project_LL
-            ,mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL,mtab_start_me_LL;
+            ,mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL,mtab_start_me_LL,
+            mdialog_tcp_chat;
     FloatingActionButton floatingActionButton;
     Spinner mtoolbar_spinner;
     String[] accounts = { "Testing Acoount", "Check 1", "No Check", "That's it", "Done"};
@@ -53,6 +54,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mcreate_new_project_LL=(LinearLayout)findViewById(R.id.create_new_project_LL);
         mtab_start_hey_LL=(LinearLayout)findViewById(R.id.tab_start_hey_LL);
         mtab_start_me_LL=(LinearLayout)findViewById(R.id.tab_start_me_LL);
+
 
         mtab_start_activity_LL = findViewById(R.id.tab_start_activity_LL);
 
@@ -113,14 +115,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 dialogBuilder.setView(dialogView);
 
                 ImageView imageView = dialogView.findViewById(R.id.expand_company_hq);
-
+                mdialog_tcp_chat=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_chat);
                 final AlertDialog alertDialog = dialogBuilder.create();
                 alertDialog.show();
+
 
                 imageView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(HomeActivity.this,CompanyHQExpandActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_chat.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,ChatActivity.class);
                         startActivity(intent);
                     }
                 });
