@@ -163,4 +163,21 @@
 
     <string name="bottomsheet_dialog_chat_box_people_following"> people following this:</string>
     <string name="bottomsheet_dialog_chat_box">Unfollow</string>
+
+    <!--To do Activity-->
+
+    <string name="to_do_intro">Keep discussion focused, on-topic, and organized in threads. Since topics and discussions stay together, they\'re easy to reference later.</string>
+    <string name="to_do_intro_dialog_heading">When would I post here?</string>
+    <string name="to_do_suggest1">To share and update on your progress so far</string>
+    <string name="to_do_suggest2">To gather feedback on your latest work</string>
+    <string name="to_do_suggest3">To post a kickoff and rally the team</string>
+
+
+    <!--Dialog all messages type-->
+
+    <string name="dialog_all_messsages">All messages</string>
+    <string name="dialog_FYI">FYIs</string>
+    <string name="dialog_heartbeats">Heartbeats</string>
+    <string name="dialog_pitches">Pitches</string>
+    <string name="dialog_questions">Questons</string>
 </resources>

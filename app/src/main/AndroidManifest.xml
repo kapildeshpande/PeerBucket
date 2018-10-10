@@ -72,6 +72,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation"
             android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activity.Activity_MessageBoard"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
