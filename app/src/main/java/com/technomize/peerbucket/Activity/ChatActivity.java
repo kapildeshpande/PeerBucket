@@ -46,7 +46,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 
         mattachment_chat_box= (TextView)findViewById(R.id.attachment_chat_box);
         msend_chat_box=(TextView) findViewById(R.id.send_chat_box);
-        mback_arrow_chat_box=(TextView) findViewById(R.id.back_arrow_chat_box);
+        mback_arrow_chat_box=(TextView) toolbar.findViewById(R.id.back_arrow_chat_box);
         mchat_box_group= (TextView) findViewById(R.id.chat_box_group);
         mchat_box_right_image=(ImageView) findViewById(R.id.chat_box_right_image);
         mimage_other_user_profile= (ImageView) findViewById(R.id.image_other_user_profile);
