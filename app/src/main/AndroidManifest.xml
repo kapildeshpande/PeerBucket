@@ -66,12 +66,14 @@
             android:name=".Activity.MeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation" />
-        <activity android:name=".Activity.CompanyHQExpandActivity"></activity>
-
-        <activity android:name=".Activity.ChatActivity"
+        <activity android:name=".Activity.CompanyHQExpandActivity" />
+        <activity
+            android:name=".Activity.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.AutomaticCheckinActivity" />
+        <activity android:name=".Activity.DocsAndFilesActivity"></activity>
     </application>
 
 </manifest>

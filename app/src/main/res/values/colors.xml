@@ -10,4 +10,6 @@
     <color name="material_purple">#7E57C2</color>
     <color name="material_grey">#CFD8DC</color>
     <color name="material_cream">#e0e0e0</color>
+    <color name="material_green">#ffab91</color>
+    <color name="material_light_cream">#fff3e0</color>
 </resources>

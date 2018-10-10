@@ -148,7 +148,6 @@
     <string name="companyHQ_welcome_end">Happy Basecamping</string>
 
 
-
     <!--Dialog Current user-->
 
     <string name="dialog_current_user_option1">See what\'s on my plate</string>
@@ -163,4 +162,22 @@
 
     <string name="bottomsheet_dialog_chat_box_people_following"> people following this:</string>
     <string name="bottomsheet_dialog_chat_box">Unfollow</string>
+
+    <!-- Automatic Check-in Activity -->
+    <string name="automatic_checkin_card1_subtext">Asking 1 person every Monday at 9am.</string>
+    <string name="automatic_checkin_card1_heading">What will you be working on this week?</string>
+    <string name="automatic_checkin_card2_subtext">Asking 1 person every weekday at 4:30pm.</string>
+    <string name="automatic_checkin_card2_heading">What did you work on today?</string>
+    <string name="automatic_checkin_card3_subtext">Asking 1 person the first Monday of each month at 9am.</string>
+    <string name="automatic_checkin_card3_heading">Read any good books lately?</string>
+    <string name="automatic_checkin_card4_subtext">This check-in is paused, nobody is being asked.</string>
+    <string name="automatic_checkin_card4_heading">Been inspired by anything lately?</string>
+
+    <!-- Docs and Files Activity -->
+    <string name="docs_and_files_heading">This is a place to store and organize assets and reference material.</string>
+    <string name="docs_and_files_text1">When would I use this?</string>
+    <string name="docs_and_files_text2">To keep tabs of every version of a file - especially the latest one.</string>
+    <string name="docs_and_files_text3">To share big files with a teammate or a contractor.</string>
+    <string name="docs_and_files_text4">To keep all your docs (Google or otherwise) in one place.</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.technomize.peerbucket.Activity;
 
+import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,19 +16,28 @@ import android.view.View;
 import com.technomize.peerbucket.Adapter.ActivityScreenAdapter;
 import com.technomize.peerbucket.R;
 
-public class CompanyHQExpandActivity extends AppCompatActivity {
+public class CompanyHQExpandActivity extends AppCompatActivity implements View.OnClickListener {
 
     private RecyclerView recyclerView;
-    private CardView mcv_search_expand;
+    private CardView mcv_search_expand,automaticCheckin,docsAndFiles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_hqexpand);
 
-        mcv_search_expand = findViewById(R.id.cv_search_expand);
+        initUI();
         initToolbar();
         initRecyclerView();
+    }
+
+    private void initUI () {
+        mcv_search_expand = findViewById(R.id.cv_search_expand);
+        automaticCheckin = findViewById(R.id.card_automatic_check_in);
+        docsAndFiles = findViewById(R.id.card_docs_and_files);
+
+        docsAndFiles.setOnClickListener(this);
+        automaticCheckin.setOnClickListener(this);
     }
 
     private void initRecyclerView () {
@@ -50,6 +60,24 @@ public class CompanyHQExpandActivity extends AppCompatActivity {
         collapsingToolbar.setExpandedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor);
         collapsingToolbar.setCollapsedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        Intent intent;
+
+        switch (v.getId()) {
+            case R.id.card_automatic_check_in:
+                intent = new Intent(this,AutomaticCheckinActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.card_docs_and_files:
+                intent = new Intent(this,DocsAndFilesActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 
     @Override
