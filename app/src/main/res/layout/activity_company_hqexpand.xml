@@ -153,7 +153,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/ic_global_message_board"/>
+                            android:src="@drawable/ic_global_chat"/>
 
                     </LinearLayout>
 
@@ -184,11 +184,17 @@
                             android:layout_height="1dp"
                             android:background="#c0c0c0" />
 
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_global_message_board"/>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/linear_layout1"
-                            android:layout_marginTop="8dp">
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone">
 
                             <ImageView
                                 android:layout_width="26dp"
@@ -244,7 +250,8 @@
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_weight="50"
-                    android:padding="16dp">
+                    android:padding="16dp"
+                    android:id="@+id/card_todo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -264,6 +271,11 @@
                             android:layout_height="1dp"
                             android:background="#c0c0c0" />
 
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_global_to_dos"/>
+
 
                     </LinearLayout>
 
@@ -274,7 +286,8 @@
                     android:layout_height="120dp"
                     android:layout_weight="50"
                     android:padding="16dp"
-                    android:layout_marginLeft="16dp">
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/card_schedule">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -340,6 +353,10 @@
                             android:layout_height="1dp"
                             android:background="#c0c0c0" />
 
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_global_automatic_checkins"/>
 
                     </LinearLayout>
 

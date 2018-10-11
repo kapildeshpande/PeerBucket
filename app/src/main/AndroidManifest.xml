@@ -73,7 +73,9 @@
             android:theme="@style/Noanimation"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".Activity.AutomaticCheckinActivity" />
-        <activity android:name=".Activity.DocsAndFilesActivity"></activity>
+        <activity android:name=".Activity.DocsAndFilesActivity" />
+        <activity android:name=".Activity.ScheduleActivity" />
+        <activity android:name=".Activity.ToDoActivity"></activity>
     </application>
 
 </manifest>
