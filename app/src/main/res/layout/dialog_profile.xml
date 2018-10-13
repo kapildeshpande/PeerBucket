@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="66dp">
+
+        <ImageView
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:src="@drawable/google_icon"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:src="@drawable/ic_edit_white"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:layout_alignEnd="@+id/logo"
+            android:layout_alignRight="@+id/logo"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Kapil Deshpande"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="12:04 AM in GMT+05:30"/>
+
+    <View
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/dialog_profile_text1"
+        android:textSize="16sp"
+        android:textColor="@color/material_green"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:text="@string/dialog_profile_text2"
+        android:textColor="@color/material_green"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="@string/dialog_profile_text3"
+        android:textColor="@color/material_green" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

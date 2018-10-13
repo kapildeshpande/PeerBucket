@@ -71,10 +71,20 @@
         <activity android:name=".Activity.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation"
+<<<<<<< HEAD
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.AutomaticCheckinActivity" />
+        <activity android:name=".Activity.DocsAndFilesActivity" />
+        <activity android:name=".Activity.ScheduleActivity" />
+        <activity android:name=".Activity.ToDoActivity" />
+        <activity android:name=".Activity.MyAssignmentActivity" />
+        <activity android:name=".Activity.EditProfileActivity"></activity>
+=======
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Activity.Activity_MessageBoard"
             android:screenOrientation="portrait"
             />
+>>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
     </application>
 
 </manifest>

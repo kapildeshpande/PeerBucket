@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:layout_marginStart="8dp">
+            android:layout_marginStart="8dp"
+            android:id="@+id/user_name">
 
             <TextView
                 android:layout_width="36dp"
@@ -78,11 +79,12 @@
                 android:orientation="horizontal"
                 android:padding="8dp">
 
-                <ImageView
+                <TextView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/ic_bookmark"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="@drawable/ic_bookmark"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/bookmark"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,11 +102,12 @@
                 android:orientation="horizontal"
                 android:padding="8dp">
 
-                <ImageView
+                <TextView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/ic_schedule"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="@drawable/ic_schedule"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/schedule"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -199,7 +202,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:id="@+id/edit_profile">
 
                 <ImageView
                     android:layout_width="36dp"

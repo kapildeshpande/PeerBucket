@@ -19,7 +19,7 @@ import com.technomize.peerbucket.R;
 public class CompanyHQExpandActivity extends AppCompatActivity implements View.OnClickListener {
 
     private RecyclerView recyclerView;
-    private CardView mcv_search_expand,automaticCheckin,docsAndFiles;
+    private CardView mcv_search_expand,automaticCheckin,docsAndFiles,schedule,toDo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +35,13 @@ public class CompanyHQExpandActivity extends AppCompatActivity implements View.O
         mcv_search_expand = findViewById(R.id.cv_search_expand);
         automaticCheckin = findViewById(R.id.card_automatic_check_in);
         docsAndFiles = findViewById(R.id.card_docs_and_files);
+        schedule = findViewById(R.id.card_schedule);
+        toDo = findViewById(R.id.card_todo);
 
         docsAndFiles.setOnClickListener(this);
         automaticCheckin.setOnClickListener(this);
+        schedule.setOnClickListener(this);
+        toDo.setOnClickListener(this);
     }
 
     private void initRecyclerView () {
@@ -75,6 +79,16 @@ public class CompanyHQExpandActivity extends AppCompatActivity implements View.O
 
             case R.id.card_docs_and_files:
                 intent = new Intent(this,DocsAndFilesActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.card_schedule:
+                intent = new Intent(this,ScheduleActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.card_todo:
+                intent = new Intent(this,ToDoActivity.class);
                 startActivity(intent);
                 break;
         }

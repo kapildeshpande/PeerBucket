@@ -198,6 +198,17 @@
     <string name="docs_and_files_text3">To share big files with a teammate or a contractor.</string>
     <string name="docs_and_files_text4">To keep all your docs (Google or otherwise) in one place.</string>
 
+<<<<<<< HEAD
+    <!-- Dialog profile Date 13/10/2018 -->
+    <string name="dialog_profile_text1">See what\'s on my plate</string>
+    <string name="dialog_profile_text2">See what I\'ve been up to</string>
+    <string name="dialog_profile_text3">Edit Profile</string>
+
+    <!-- My Assignment Activity Date 13/10/2018 -->
+    <string name="assignment_activity_text1">You don\'t have any assignments yet. When you have to-dos assigned to you in Basecamp, they\'ll show up here.</string>
+    <string name="assignment_activity_text2">You haven\'t assigned any to-dos yet. Anything you assign to someone else will show up here.</string>
+
+=======
 
     <!--Bottom Sheet Docs And Files-->
 
@@ -208,4 +219,5 @@
     <string name="bs_docs_dropbox">Dropbox</string>
     <string name="bs_docs_box">Box</string>
     <string name="bs_docs_onedrive">OneDrive</string>
+>>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
 </resources>
