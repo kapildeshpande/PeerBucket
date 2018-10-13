@@ -1,6 +1,7 @@
 package com.technomize.peerbucket.Activity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
@@ -21,8 +22,11 @@ import com.technomize.peerbucket.R;
 public class MeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FloatingActionButton floatingActionButton;
-    private LinearLayout mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL,mtab_start_home_LL,versionLayout;
+    private LinearLayout mtab_start_hey_LL,closeFabLayout,
+                        mtab_start_activity_LL,mtab_start_home_LL,versionLayout,userNameLayout,editProfileLayout;
     private CardView fabLayout, mcv_search_expand;
+    private Typeface fontTF,fontTFRegular;
+    private TextView bookmark,schedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,18 +44,35 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
         closeFabLayout = findViewById(R.id.close_fab_layout);
         mcv_search_expand=(CardView)findViewById(R.id.cv_search_expand);
         versionLayout = findViewById(R.id.version);
+        userNameLayout = findViewById(R.id.user_name);
+        bookmark = findViewById(R.id.bookmark);
+        schedule = findViewById(R.id.schedule);
+        editProfileLayout = findViewById(R.id.edit_profile);
 
         mcv_search_expand.setOnClickListener(this);
         mtab_start_hey_LL=(LinearLayout)findViewById(R.id.tab_start_hey_LL);
         mtab_start_home_LL=(LinearLayout)findViewById(R.id.tab_start_home_LL);
         mtab_start_activity_LL=(LinearLayout)findViewById(R.id.tab_start_activity_LL);
 
+        editProfileLayout.setOnClickListener(this);
+        schedule.setOnClickListener(this);
+        bookmark.setOnClickListener(this);
+        userNameLayout.setOnClickListener(this);
         versionLayout.setOnClickListener(this);
         closeFabLayout.setOnClickListener(this);
         floatingActionButton.setOnClickListener(this);
         mtab_start_hey_LL.setOnClickListener(this);
         mtab_start_activity_LL.setOnClickListener(this);
         mtab_start_home_LL.setOnClickListener(this);
+
+        //Font Awesome
+//        fontTF= Typeface.createFromAsset(getAssets(), "font/fawsmsolid.ttf");
+//        fontTFRegular = Typeface.createFromAsset(getAssets(),"font/fawsmsolid.tft");
+//        bookmark.setTypeface(fontTF);
+//        bookmark.setText("\uF02E");
+//
+//        schedule.setTypeface(fontTFRegular);
+//        schedule.setText("\uF073");
     }
 
     private void initToolbar () {
@@ -116,6 +137,11 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
                 floatingActionButton.setVisibility(View.VISIBLE);
                 break;
 
+            case R.id.edit_profile:
+                Intent intent = new Intent(this,EditProfileActivity.class);
+                startActivity(intent);
+                break;
+
             case R.id.version:
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
 
@@ -133,6 +159,17 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
                         alertDialog.dismiss();
                     }
                 });
+                break;
+
+            case R.id.user_name:
+                AlertDialog.Builder dialogBuilder1 = new AlertDialog.Builder(this);
+
+                LayoutInflater inflater1 = this.getLayoutInflater();
+                View dialogView1 = inflater1.inflate(R.layout.dialog_profile, null);
+                dialogBuilder1.setView(dialogView1);
+
+                final AlertDialog alertDialog1 = dialogBuilder1.create();
+                alertDialog1.show();
                 break;
         }
     }

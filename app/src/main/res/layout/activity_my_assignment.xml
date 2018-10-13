@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/material_cream"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/back_arrow_chat_box"
+                android:background="@drawable/ic_arrow_back_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Assignments"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_option_dots"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="36dp"
+        android:id="@+id/linear_layout1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="@color/material_grey"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My to-dos"
+            android:layout_gravity="top"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/material_grey"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I assigned"
+            android:layout_gravity="top"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="@color/material_grey"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout1"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="@string/assignment_activity_text1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:visibility="gone"
+        android:layout_below="@+id/linear_layout1"/>
+
+</RelativeLayout>

@@ -75,7 +75,9 @@
         <activity android:name=".Activity.AutomaticCheckinActivity" />
         <activity android:name=".Activity.DocsAndFilesActivity" />
         <activity android:name=".Activity.ScheduleActivity" />
-        <activity android:name=".Activity.ToDoActivity"></activity>
+        <activity android:name=".Activity.ToDoActivity" />
+        <activity android:name=".Activity.MyAssignmentActivity" />
+        <activity android:name=".Activity.EditProfileActivity"></activity>
     </application>
 
 </manifest>
