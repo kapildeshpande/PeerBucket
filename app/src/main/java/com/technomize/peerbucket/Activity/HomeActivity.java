@@ -34,7 +34,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     CardView mcv_company_hq, mcv_search_expand,fabLayout;
     LinearLayout mcreate_team_LL,mcreate_new_project_LL
             ,mtab_start_hey_LL,closeFabLayout,mtab_start_activity_LL,mtab_start_me_LL,
-            mdialog_tcp_chat;
+            mdialog_tcp_chat,mdialog_tcp_message_board,mdialog_tcp_automatic_checkins,mdialog_tcp_docs_and_files,
+            mdialog_tcp_todos,mdialog_tcp_schedule;
     FloatingActionButton floatingActionButton;
     Spinner mtoolbar_spinner;
     String[] accounts = { "Testing Acoount", "Check 1", "No Check", "That's it", "Done"};
@@ -115,7 +116,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 dialogBuilder.setView(dialogView);
 
                 ImageView imageView = dialogView.findViewById(R.id.expand_company_hq);
+
                 mdialog_tcp_chat=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_chat);
+                mdialog_tcp_message_board=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_message_board);
+                mdialog_tcp_automatic_checkins=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_automatic_checkins);
+                mdialog_tcp_docs_and_files=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_docs_and_files);
+                mdialog_tcp_todos=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_todos);
+                mdialog_tcp_schedule=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_schedule);
+
                 final AlertDialog alertDialog = dialogBuilder.create();
                 alertDialog.show();
 
@@ -132,6 +140,46 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(HomeActivity.this,ChatActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_message_board.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,Activity_MessageBoard.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_automatic_checkins.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,AutomaticCheckinActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_docs_and_files.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,DocsAndFilesActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_todos.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,ToDoActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mdialog_tcp_schedule.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,ScheduleActivity.class);
                         startActivity(intent);
                     }
                 });
