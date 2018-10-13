@@ -141,11 +141,12 @@
     <string name="companyHQ_card6">Docs and Files</string>
     <string name="companyHQ_tools">Change tools (add Email Forwards)</string>
     <string name="companyHQ_activity">Company HQ Activity</string>
-    <string name="companyHQ_welcome">Welcome to Kapil HQ!</string>
-    <string name="companyHQ_welcome_subtext">Kapil Deshpande created this September 14,2018</string>
+    <string name="companyHQ_welcome">Welcome to  HQ!</string>
+    <string name="companyHQ_welcome_subtext">User created this September 14,2018</string>
     <string name="companyHQ_welcome_description">This is the communications hub for your whole company. Use it to post announcements, notes, and stuff everyone needs to know.</string>
     <string name="companyHQ_welcome_link">Learn more about the tools above \u2022 Need a hand with anything? we're standing by!</string>
     <string name="companyHQ_welcome_end">Happy Basecamping</string>
+
 
 
     <!--Dialog Current user-->
@@ -162,6 +163,23 @@
 
     <string name="bottomsheet_dialog_chat_box_people_following"> people following this:</string>
     <string name="bottomsheet_dialog_chat_box">Unfollow</string>
+    <!--To do Activity-->
+
+    <string name="to_do_intro">Keep discussion focused, on-topic, and organized in threads. Since topics and discussions stay together, they\'re easy to reference later.</string>
+    <string name="to_do_intro_dialog_heading">When would I post here?</string>
+    <string name="to_do_suggest1">To share and update on your progress so far</string>
+    <string name="to_do_suggest2">To gather feedback on your latest work</string>
+    <string name="to_do_suggest3">To post a kickoff and rally the team</string>
+
+
+    <!--Dialog all messages type-->
+
+    <string name="dialog_all_messsages">All messages</string>
+    <string name="dialog_announcements">Announcements</string>
+    <string name="dialog_FYI">FYIs</string>
+    <string name="dialog_heartbeats">Heartbeats</string>
+    <string name="dialog_pitches">Pitches</string>
+    <string name="dialog_questions">Questons</string>
 
     <!-- Automatic Check-in Activity -->
     <string name="automatic_checkin_card1_subtext">Asking 1 person every Monday at 9am.</string>
@@ -180,6 +198,7 @@
     <string name="docs_and_files_text3">To share big files with a teammate or a contractor.</string>
     <string name="docs_and_files_text4">To keep all your docs (Google or otherwise) in one place.</string>
 
+<<<<<<< HEAD
     <!-- Dialog profile Date 13/10/2018 -->
     <string name="dialog_profile_text1">See what\'s on my plate</string>
     <string name="dialog_profile_text2">See what I\'ve been up to</string>
@@ -189,4 +208,16 @@
     <string name="assignment_activity_text1">You don\'t have any assignments yet. When you have to-dos assigned to you in Basecamp, they\'ll show up here.</string>
     <string name="assignment_activity_text2">You haven\'t assigned any to-dos yet. Anything you assign to someone else will show up here.</string>
 
+=======
+
+    <!--Bottom Sheet Docs And Files-->
+
+    <string name="bs_docs_start">Start a new doc</string>
+    <string name="bs_docs_folder">Make a new folder</string>
+    <string name="bs_docs_upload">Upload files</string>
+    <string name="bs_docs_google_drive">Google Drive</string>
+    <string name="bs_docs_dropbox">Dropbox</string>
+    <string name="bs_docs_box">Box</string>
+    <string name="bs_docs_onedrive">OneDrive</string>
+>>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
 </resources>
