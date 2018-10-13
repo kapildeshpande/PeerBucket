@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_date_event">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed, Oct 10"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nothing's on the schedule"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/logo"
+                android:src="@drawable/google_icon"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="120dp"
+            android:layout_height="26dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/shape_white_button_small"
+            android:text="Add an event"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/time"
+            android:text="12:00am - 12:30am"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+</android.support.v7.widget.CardView>
