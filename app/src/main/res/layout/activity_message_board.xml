@@ -78,6 +78,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Messages"
+                android:id="@+id/messgae_board_sort_type"
                 android:gravity="center"
 
                 />
