@@ -23,7 +23,9 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
 
     private FloatingActionButton floatingActionButton;
     private LinearLayout mtab_start_hey_LL,closeFabLayout,
-                        mtab_start_activity_LL,mtab_start_home_LL,versionLayout,userNameLayout,editProfileLayout;
+                        mtab_start_activity_LL,mtab_start_home_LL,versionLayout
+                        ,userNameLayout,editProfileLayout,assignmentLayout,
+                        scheduleLayout,changeAvatarLayout,registeredDevicesLayout;
     private CardView fabLayout, mcv_search_expand;
     private Typeface fontTF,fontTFRegular;
     private TextView bookmark,schedule;
@@ -48,12 +50,20 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
         bookmark = findViewById(R.id.bookmark);
         schedule = findViewById(R.id.schedule);
         editProfileLayout = findViewById(R.id.edit_profile);
+        assignmentLayout = findViewById(R.id.assignment);
+        scheduleLayout = findViewById(R.id.schedule_layout);
+        changeAvatarLayout = findViewById(R.id.change_avatar_layout);
+        registeredDevicesLayout = findViewById(R.id.registered_devices_layout);
 
         mcv_search_expand.setOnClickListener(this);
         mtab_start_hey_LL=(LinearLayout)findViewById(R.id.tab_start_hey_LL);
         mtab_start_home_LL=(LinearLayout)findViewById(R.id.tab_start_home_LL);
         mtab_start_activity_LL=(LinearLayout)findViewById(R.id.tab_start_activity_LL);
 
+        registeredDevicesLayout.setOnClickListener(this);
+        changeAvatarLayout.setOnClickListener(this);
+        scheduleLayout.setOnClickListener(this);
+        assignmentLayout.setOnClickListener(this);
         editProfileLayout.setOnClickListener(this);
         schedule.setOnClickListener(this);
         bookmark.setOnClickListener(this);
@@ -170,6 +180,26 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
 
                 final AlertDialog alertDialog1 = dialogBuilder1.create();
                 alertDialog1.show();
+                break;
+
+            case R.id.assignment:
+                Intent intent1 = new Intent(this,MyAssignmentActivity.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.schedule_layout:
+                Intent intent2 = new Intent(this,ScheduleActivity.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.change_avatar_layout:
+                Intent intent3 = new Intent(this,ChangeAvatarActivity.class);
+                startActivity(intent3);
+                break;
+
+            case R.id.registered_devices_layout:
+                Intent intent4 = new Intent(this,MyDevicesActivity.class);
+                startActivity(intent4);
                 break;
         }
     }

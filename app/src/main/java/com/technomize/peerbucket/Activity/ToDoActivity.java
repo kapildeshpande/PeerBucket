@@ -66,4 +66,3 @@ public class ToDoActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 }
-}

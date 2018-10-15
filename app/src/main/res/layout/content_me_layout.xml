@@ -55,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:id="@+id/assignment">
 
                 <ImageView
                     android:layout_width="36dp"
@@ -100,7 +101,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:id="@+id/schedule_layout">
 
                 <TextView
                     android:layout_width="36dp"
@@ -225,7 +227,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:id="@+id/change_avatar_layout">
 
                 <ImageView
                     android:layout_width="36dp"
@@ -269,7 +272,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:id="@+id/registered_devices_layout">
 
                 <ImageView
                     android:layout_width="36dp"

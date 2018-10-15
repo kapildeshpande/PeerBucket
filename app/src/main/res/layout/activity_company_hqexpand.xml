@@ -243,13 +243,8 @@
                     android:layout_height="120dp"
                     android:layout_weight="50"
                     android:padding="16dp"
-<<<<<<< HEAD
-                    android:layout_marginLeft="16dp"
-                    android:id="@+id/card_schedule">
-=======
                     android:id="@+id/card_schedule"
                     android:layout_marginLeft="16dp">
->>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
 
                     <LinearLayout
                         android:layout_width="match_parent"

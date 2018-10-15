@@ -148,7 +148,6 @@
     <string name="companyHQ_welcome_end">Happy Basecamping</string>
 
 
-
     <!--Dialog Current user-->
 
     <string name="dialog_current_user_option1">See what\'s on my plate</string>
@@ -198,7 +197,7 @@
     <string name="docs_and_files_text3">To share big files with a teammate or a contractor.</string>
     <string name="docs_and_files_text4">To keep all your docs (Google or otherwise) in one place.</string>
 
-<<<<<<< HEAD
+
     <!-- Dialog profile Date 13/10/2018 -->
     <string name="dialog_profile_text1">See what\'s on my plate</string>
     <string name="dialog_profile_text2">See what I\'ve been up to</string>
@@ -208,7 +207,6 @@
     <string name="assignment_activity_text1">You don\'t have any assignments yet. When you have to-dos assigned to you in Basecamp, they\'ll show up here.</string>
     <string name="assignment_activity_text2">You haven\'t assigned any to-dos yet. Anything you assign to someone else will show up here.</string>
 
-=======
 
     <!--Bottom Sheet Docs And Files-->
 
@@ -219,5 +217,24 @@
     <string name="bs_docs_dropbox">Dropbox</string>
     <string name="bs_docs_box">Box</string>
     <string name="bs_docs_onedrive">OneDrive</string>
->>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
+
+    <!-- Change Avatar Activity -->
+    <string name="change_avatar_Activity_image">Select a new image</string>
+    <string name="change_avatar_Activity_text">Remove my avatar and show my iitials instead...</string>
+
+    <!-- Remove Avatar -->
+    <string name="remove_avatar_dialog_text1">Remove your avatar?</string>
+    <string name="remove_avatar_dialog_text2">Your picture will be immediately removed?</string>
+
+    <!-- My Devices Activity -->
+    <string name="my_device_text_button1">Test this device</string>
+    <string name="my_device_text_button2">Remove</string>
+    <string name="my_device_text1">Having trouble?</string>
+    <string name="my_device_text2">if you aren\'t getting notification on your device, try sending a test notification to your device with the button above</string>
+    <string name="my_device_text3">If you don\'t receive the test notification</string>
+    <string name="my_device_text4">\u2022 First verify that you\'ve enabled notification for Basecamp. There are instruction for IOS and Android.\n
+    \u2022 If notification are already enabled, please try disabling then re-enabling them in the Basecamp app. Try sending another test.\n
+    \u2022 If you still don\'t receive the test notification, remove the device from this screen. That will disable notification on your device. Re-enable them in the Basecamp app try again\n
+    </string>
+
 </resources>

@@ -66,25 +66,20 @@
             android:name=".Activity.MeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation" />
-        <activity android:name=".Activity.CompanyHQExpandActivity"></activity>
-
-        <activity android:name=".Activity.ChatActivity"
+        <activity android:name=".Activity.CompanyHQExpandActivity" />
+        <activity
+            android:name=".Activity.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Noanimation"
-<<<<<<< HEAD
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".Activity.AutomaticCheckinActivity" />
         <activity android:name=".Activity.DocsAndFilesActivity" />
         <activity android:name=".Activity.ScheduleActivity" />
         <activity android:name=".Activity.ToDoActivity" />
         <activity android:name=".Activity.MyAssignmentActivity" />
-        <activity android:name=".Activity.EditProfileActivity"></activity>
-=======
-            android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".Activity.Activity_MessageBoard"
-            android:screenOrientation="portrait"
-            />
->>>>>>> 09066b3d3d9c2f707b21bc03269e5efa01901117
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.ChangeAvatarActivity" />
+        <activity android:name=".Activity.MyDevicesActivity"></activity>
     </application>
 
 </manifest>
