@@ -235,6 +235,33 @@
     <string name="my_device_text4">\u2022 First verify that you\'ve enabled notification for Basecamp. There are instruction for IOS and Android.\n
     \u2022 If notification are already enabled, please try disabling then re-enabling them in the Basecamp app. Try sending another test.\n
     \u2022 If you still don\'t receive the test notification, remove the device from this screen. That will disable notification on your device. Re-enable them in the Basecamp app try again\n
-    </string>
+    \u2022 If all else fails, please contact our support team for hands-on help.</string>
+    <string name="my_device_text5">If your device isn\'t listed you\'ll need to enable notifications.</string>
+
+    <!-- My Bookmarks Activity -->
+    <string name="my_bookmark_text_center">Bookmark any To-do List, Schedule, Campfire, Message, or Doc and it\'ll show up here for easy reference.</string>
+
+    <!-- Notification Setting Activity -->
+    <string name="notification_setting_heading1">Notification are on</string>
+    <string name="notification_setting_subtext1">You\'re set to receive email, browser, and mobile notification for everything all the time.</string>
+    <string name="notification_setting_heading2">Notify me about everything</string>
+    <string name="notification_setting_subtext2">This includes new messages and comments, to-dos assigned to you, when someone @mentions you, and Campfire chats and ping you\'r part of.</string>
+    <string name="notification_setting_heading3">Only notify me when someone sends me a Ping or @mentions me</string>
+    <string name="notification_setting_subtext3">Basecamp will only send you a notification when someone send you a Ping or @mention you anywhere. You can always check and Hey! and Campfire menus manually to see what else is new for you.</string>
+    <string name="notification_setting_heading4">Send me email notification</string>
+    <string name="notification_setting_subtext4">Note: to prevent your inbox from overflowing, Basecamp will bundle Pings together if they happen within few minutes of each other. Yo won\'t be emailed if yo are actively participating in a Ping or Campfire chat in the Basecamp app or on your computer</string>
+    <string name="notification_setting_heading5">Pop up notification on your computer when Basecamp is open</string>
+    <string name="notification_setting_subtext5">Note: To prevent you from being annoyingly overnotified, you won\'t get pop-up alerts about a particular message, to-do, or chat if you\'re looking right at it.</string>
+    <string name="notification_setting_heading6">Show the number of unread items</string>
+    <string name="notification_setting_subtext6">You\'ll see counts for each new Ping, Campfire, and Hey! notification when Basecamp is open in your browser.</string>
+    <string name="notification_setting_heading7">Always! 24/7/365 no matter what.</string>
+    <string name="notification_setting_heading8">Work Can wait! Only during my work hours...</string>
+
+    <!-- Saved Draft Activity -->
+    <string name="saved_draft_text1">You don\'t have any draft right now.</string>
+    <string name="saved_draft_text2">Any time you write something in Basecamp (like a message or document) and save it as a draft, it\'ll show up here. Your saved drafts won\'t be visible to anyone else.</string>
+
+    <!-- Boost Activity -->
+    <string name="boost_activity_text">When you post something to Basecamp, other can send you boosts (little notes of encouragements) to show that they enjoyed your post. We\'ll let you know when it happens.\n\nBy the way - try posting this gif for guaranteed boosts!</string>
 
 </resources>

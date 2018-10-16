@@ -25,7 +25,8 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
     private LinearLayout mtab_start_hey_LL,closeFabLayout,
                         mtab_start_activity_LL,mtab_start_home_LL,versionLayout
                         ,userNameLayout,editProfileLayout,assignmentLayout,
-                        scheduleLayout,changeAvatarLayout,registeredDevicesLayout;
+                        scheduleLayout,changeAvatarLayout,registeredDevicesLayout,
+                        bookmarkLayout,recentActivityLayout,notificationSettingLayout,savedDraftLayout,boostLayout;
     private CardView fabLayout, mcv_search_expand;
     private Typeface fontTF,fontTFRegular;
     private TextView bookmark,schedule;
@@ -54,12 +55,22 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
         scheduleLayout = findViewById(R.id.schedule_layout);
         changeAvatarLayout = findViewById(R.id.change_avatar_layout);
         registeredDevicesLayout = findViewById(R.id.registered_devices_layout);
+        bookmarkLayout = findViewById(R.id.bookmark_layout);
+        recentActivityLayout = findViewById(R.id.recent_activity_layout);
+        notificationSettingLayout = findViewById(R.id.notification_setting_layout);
+        savedDraftLayout = findViewById(R.id.saved_draft_layout);
+        boostLayout = findViewById(R.id.boost_layout);
 
         mcv_search_expand.setOnClickListener(this);
         mtab_start_hey_LL=(LinearLayout)findViewById(R.id.tab_start_hey_LL);
         mtab_start_home_LL=(LinearLayout)findViewById(R.id.tab_start_home_LL);
         mtab_start_activity_LL=(LinearLayout)findViewById(R.id.tab_start_activity_LL);
 
+        boostLayout.setOnClickListener(this);
+        savedDraftLayout.setOnClickListener(this);
+        notificationSettingLayout.setOnClickListener(this);
+        recentActivityLayout.setOnClickListener(this);
+        bookmarkLayout.setOnClickListener(this);
         registeredDevicesLayout.setOnClickListener(this);
         changeAvatarLayout.setOnClickListener(this);
         scheduleLayout.setOnClickListener(this);
@@ -200,6 +211,31 @@ public class MeActivity extends AppCompatActivity implements View.OnClickListene
             case R.id.registered_devices_layout:
                 Intent intent4 = new Intent(this,MyDevicesActivity.class);
                 startActivity(intent4);
+                break;
+
+            case R.id.bookmark_layout:
+                Intent intent5 = new Intent(this,BookmarkActivity.class);
+                startActivity(intent5);
+                break;
+
+            case R.id.recent_activity_layout:
+                Intent intent6 = new Intent(this,RecentActivity.class);
+                startActivity(intent6);
+                break;
+
+            case R.id.notification_setting_layout:
+                Intent intent7 = new Intent(this,NotificationSettingActivity.class);
+                startActivity(intent7);
+                break;
+
+            case R.id.saved_draft_layout:
+                Intent intent8 = new Intent(this,SavedDraftActivity.class);
+                startActivity(intent8);
+                break;
+
+            case R.id.boost_layout:
+                Intent intent9 = new Intent(this,BoostActivity.class);
+                startActivity(intent9);
                 break;
         }
     }

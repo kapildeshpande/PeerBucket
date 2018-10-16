@@ -79,7 +79,12 @@
         <activity android:name=".Activity.MyAssignmentActivity" />
         <activity android:name=".Activity.EditProfileActivity" />
         <activity android:name=".Activity.ChangeAvatarActivity" />
-        <activity android:name=".Activity.MyDevicesActivity"></activity>
+        <activity android:name=".Activity.MyDevicesActivity" />
+        <activity android:name=".Activity.BookmarkActivity" />
+        <activity android:name=".Activity.RecentActivity" />
+        <activity android:name=".Activity.NotificationSettingActivity" />
+        <activity android:name=".Activity.SavedDraftActivity" />
+        <activity android:name=".Activity.BoostActivity"></activity>
     </application>
 
 </manifest>
