@@ -116,6 +116,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 dialogBuilder.setView(dialogView);
 
                 ImageView imageView = dialogView.findViewById(R.id.expand_company_hq);
+                TextView textView = dialogView.findViewById(R.id.add_remove);
 
                 mdialog_tcp_chat=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_chat);
                 mdialog_tcp_message_board=(LinearLayout) dialogView.findViewById(R.id.dialog_tcp_message_board);
@@ -126,6 +127,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
                 final AlertDialog alertDialog = dialogBuilder.create();
                 alertDialog.show();
+
+                textView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this,AddRemovePeopleActivity.class);
+                        startActivity(intent);
+                    }
+                });
 
 
                 imageView.setOnClickListener(new View.OnClickListener() {

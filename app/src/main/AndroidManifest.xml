@@ -84,7 +84,9 @@
         <activity android:name=".Activity.RecentActivity" />
         <activity android:name=".Activity.NotificationSettingActivity" />
         <activity android:name=".Activity.SavedDraftActivity" />
-        <activity android:name=".Activity.BoostActivity"></activity>
+        <activity android:name=".Activity.BoostActivity" />
+        <activity android:name=".Activity.AddRemovePeopleActivity" />
+        <activity android:name=".Activity.EditPeopleActivity"></activity>
     </application>
 
 </manifest>

@@ -27,7 +27,7 @@ public class CompanyHQExpandActivity extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_company_hqexpand);
 
         initUI();
-        initToolbar();
+        //initToolbar();
         initRecyclerView();
     }
 
