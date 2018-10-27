@@ -264,4 +264,38 @@
     <!-- Boost Activity -->
     <string name="boost_activity_text">When you post something to Basecamp, other can send you boosts (little notes of encouragements) to show that they enjoyed your post. We\'ll let you know when it happens.\n\nBy the way - try posting this gif for guaranteed boosts!</string>
 
+    <!-- AdminLand Activity  -->
+    <string name="admin_land_heading1">Administrators</string>
+    <string name="admin_land_heading2">You\'re an admin, so you can...</string>
+    <string name="admin_land_subtext1">Add/remove people or change their access</string>
+    <string name="admin_land_subtext2">Add/remove administrators</string>
+    <string name="admin_land_subtext3">Rename or delete a company</string>
+    <string name="admin_land_subtext4">Set up what\'s shown on the Home screen</string>
+    <string name="admin_land_subtext5">Change message categories</string>
+    <string name="admin_land_subtext6">Move projects from Basecamp 2 to Basecamp 3</string>
+    <string name="admin_land_heading3">Account Owners</string>
+    <string name="admin_land_heading4">You\'re an account owner, so you can..</string>
+    <string name="admin_land_subtext7">Upgrade to a paid account</string>
+    <string name="admin_land_subtext8">Add/remove account owners</string>
+    <string name="admin_land_subtext9">Rename this account (Company)</string>
+    <string name="admin_land_subtext10">View everything in the trash</string>
+    <string name="admin_land_subtext11">Access any project or team</string>
+    <string name="admin_land_subtext12">Export data from this account</string>
+    <string name="admin_land_subtext13">Cancel this account</string>
+
+    <!-- Add remove administrators activity -->
+    <string name="add_remove_administrators_text1">It\'s nice to have some trusted people available to help with administrative tasks on your Basecamp account. Here\'s what Administrators can do:\n\n
+       \t \u2022 Add or remove people from this account\n
+       \t \u2022 Change what people can access\n
+       \t \u2022 Move people between companies/organizations\n
+       \t \u2022 Rename a company/organization\n
+       \t \u2022 Add or remove other administrators\n
+    </string>
+
+    <!-- Add remove account owner activity -->
+    <string name="add_remove_account_owner_text1">Account owners have authority over this Basecamp account. They can do things like cancel the account, upgrade and downgrade, export data, and view everything on the account. It\'s a good ideae to add another owner so they can handle any matter arise with your account in case you can\'t be reached.</string>
+
+    <!-- Rename account activity -->
+    <string name="rename_account_text1">Your account name appers on invoices and exports. People who belong to more than one Basecamp account will see your account name listed in their Basecamp menu.</string>
+
 </resources>

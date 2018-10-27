@@ -26,7 +26,8 @@
     <item
         android:icon="@drawable/ic_adminland"
         android:title="@string/om_adminland"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+        android:id="@+id/admin_land"/>
     <item
         android:icon="@drawable/ic_settings"
         android:title="@string/om_settings"

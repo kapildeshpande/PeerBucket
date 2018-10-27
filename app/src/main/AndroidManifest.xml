@@ -86,7 +86,12 @@
         <activity android:name=".Activity.SavedDraftActivity" />
         <activity android:name=".Activity.BoostActivity" />
         <activity android:name=".Activity.AddRemovePeopleActivity" />
-        <activity android:name=".Activity.EditPeopleActivity"></activity>
+        <activity android:name=".Activity.EditPeopleActivity" />
+        <activity android:name=".Activity.AdminLandActivity" />
+        <activity android:name=".Activity.AddRemovePeopleChangeAccessActivity" />
+        <activity android:name=".Activity.AddRemoveAdministratorsActivity" />
+        <activity android:name=".Activity.AddRemoveAccoutOwnerActivity" />
+        <activity android:name=".Activity.RenameAccountActivity"></activity>
     </application>
 
 </manifest>

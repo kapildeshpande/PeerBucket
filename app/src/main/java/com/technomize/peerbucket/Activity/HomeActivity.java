@@ -101,7 +101,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.search:
                 mcv_search_expand.setVisibility(View.VISIBLE);
                 return true;
+
+            case R.id.admin_land:
+                Intent intent = new Intent(this,AdminLandActivity.class);
+                startActivity(intent);
+                return true;
             default:
+
                 return super.onOptionsItemSelected(item);
         }
     }
