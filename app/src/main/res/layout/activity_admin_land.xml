@@ -85,7 +85,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="80"
-                    android:text="kapil.deshpande36@gmail.com" />
+                    android:text="HQ36@gmail.com" />
 
             </LinearLayout>
 
@@ -326,7 +326,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="80"
-                    android:text="kapil.deshpande36@gmail.com" />
+                    android:text="HQ36@gmail.com" />
 
             </LinearLayout>
 

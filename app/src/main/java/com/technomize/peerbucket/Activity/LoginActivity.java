@@ -3,6 +3,7 @@ package com.technomize.peerbucket.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.SyncStateContract;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -15,24 +16,39 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.VolleyError;
 import com.technomize.peerbucket.R;
+import com.technomize.peerbucket.volley.ApiRequest;
+import com.technomize.peerbucket.volley.IApiResponse;
 
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.prefs.Preferences;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.technomize.peerbucket.ApiController.ApiConfigs.BASE_URL;
+import static com.technomize.peerbucket.ApiController.ApiConfigs.CHECK_EMAIL;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener, IApiResponse{
 
     private ImageView navigateBack;
     private LinearLayout mainLayout,forgotPasswordLayout;
     private EditText emailText,passwordText;
     private Button navigateNext,navigateNextPassword;
     private TextView mContactSupportTv;
+    private ApiRequest mApiRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        mApiRequest= new ApiRequest(this, (IApiResponse) this);
 
         navigateBack = findViewById(R.id.navigate_back);
         navigateBack.setOnClickListener(this);
@@ -74,6 +90,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.navigate_next:
                 if (isEmailValid(emailText.getText().toString())) {
+                    Map<String, String> paramsReq = new HashMap<>();
+                    paramsReq.put("email", emailText.getText().toString());
+                    mApiRequest.postRequest(BASE_URL + CHECK_EMAIL, CHECK_EMAIL, paramsReq, Request.Method.POST);
                     InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                     inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                     mainLayout.setVisibility(View.GONE);
@@ -124,5 +143,27 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void onResultReceived(String response, String tag_json_obj) {
+        if(tag_json_obj.equals(CHECK_EMAIL)){
+            try {
+                JSONObject jsonObject = new JSONObject(response);
+                Toast.makeText(this, jsonObject.toString(), Toast.LENGTH_SHORT).show();
+                if (jsonObject.getBoolean("status")) {
+                    String result = jsonObject.getString("message");
+                    Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+                }else{
+                }
+            }catch (Exception e){
+
+            }
+        }
+    }
+
+    @Override
+    public void onErrorResponse(VolleyError error) {
+
     }
 }
