@@ -298,4 +298,9 @@
     <!-- Rename account activity -->
     <string name="rename_account_text1">Your account name appers on invoices and exports. People who belong to more than one Basecamp account will see your account name listed in their Basecamp menu.</string>
 
+    
+    <!--Volley-->
+    <string name="loading">Loading...</string>
+    <string name="InternetNotAvailabel">No Internet Connection Availaible </string>
+    <string name="Ok">Ok</string>
 </resources>

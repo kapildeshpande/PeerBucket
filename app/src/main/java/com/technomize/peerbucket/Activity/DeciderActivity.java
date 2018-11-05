@@ -9,9 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.VolleyError;
 import com.technomize.peerbucket.R;
+import com.technomize.peerbucket.volley.ApiRequest;
+import com.technomize.peerbucket.volley.IApiResponse;
 
-public class DeciderActivity extends AppCompatActivity implements View.OnClickListener {
+public class DeciderActivity extends AppCompatActivity implements View.OnClickListener, IApiResponse{
 
     private Button mLoginButton,mFreeTrial;
     private TextView mContactSupportTv;
@@ -61,6 +64,16 @@ public class DeciderActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(ft_intent);
                 break;
         }
+
+    }
+
+    @Override
+    public void onResultReceived(String response, String tag_json_obj) {
+
+    }
+
+    @Override
+    public void onErrorResponse(VolleyError error) {
 
     }
 }
